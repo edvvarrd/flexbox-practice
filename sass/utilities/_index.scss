@@ -1,4 +1,4 @@
 @forward 'reset';
-@forward 'colors';
-@forward 'mixins';
+@forward 'variables' as var-*;
+@forward 'mixins' as mix-*;
 @forward 'components';

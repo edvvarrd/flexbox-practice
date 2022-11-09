@@ -1,7 +1,53 @@
-@use 'utilities';
-html,
-body {
+@use 'utilities' as *;
+html {
 	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
+}
+// NAVIGATION
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+	&:focus {
+		outline: none;
+		border: 1px solid rgba($var-pure-white, 0.5);
+		border-radius: 8px;
+	}
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+	&__bars,
+	&__bars::after,
+	&__bars::before {
+		@include mix-burgerBars;
+	}
+	&__bars {
+		width: 100%;
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
+		&::before {
+			top: 27px;
+			width: 30%;
+			transition-delay: 0.1s;
+		}
+	}
 }
