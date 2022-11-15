@@ -146,4 +146,29 @@ body {
 }
 .header__btn::before {
   background-color: #eee;
+}
+
+@media (min-width: 768px) {
+  .white-block {
+    height: 50px;
+    width: 45%;
+  }
+  .header__heading {
+    font-size: 6.6rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .header {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/header-island-large.jpg");
+  }
+  .header__heading {
+    font-size: 10rem;
+  }
 }/*# sourceMappingURL=main.css.map */

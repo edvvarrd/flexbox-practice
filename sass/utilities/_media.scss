@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 55%;
+	}
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
+}
