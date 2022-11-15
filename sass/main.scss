@@ -1,4 +1,7 @@
-@use 'utilities' as *;
+@use 'utilities/reset';
+@use 'utilities/variables' as *;
+@use 'utilities/mixins' as *;
+@use 'utilities/components';
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
@@ -19,7 +22,7 @@ body {
 	z-index: 1000;
 	&:focus {
 		outline: none;
-		border: 1px solid rgba($var-pure-white, 0.5);
+		border: 1px solid rgba($pure-white, 0.5);
 		border-radius: 8px;
 	}
 	&:hover {
@@ -36,7 +39,12 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include mix-burgerBars;
+		position: absolute;
+		right: 0;
+		height: 3px;
+		background-color: $pure-white;
+		transition: width 0.3s;
+		content: '';
 	}
 	&__bars {
 		width: 100%;
@@ -48,6 +56,43 @@ body {
 			top: 27px;
 			width: 30%;
 			transition-delay: 0.1s;
+		}
+	}
+}
+// HEADER
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 75vh;
+	text-align: center;
+	color: $pure-white;
+	@include heroImage('../img/header-island-small.jpg');
+	background-attachment: scroll;
+	&__heading {
+		font-family: 'Dancing Script', cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+	}
+	&__text {
+		font-size: 1.4rem;
+	}
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		background-color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		color: $dark;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		&::before {
+			background-color: $light-white;
 		}
 	}
 }
