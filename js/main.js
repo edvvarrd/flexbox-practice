@@ -1,12 +1,12 @@
-const nav = document.querySelector('.nav__items')
 const burgerBtn = document.querySelector('.burger-btn')
+const nav = document.querySelector('.nav__items')
 const navItems = document.querySelectorAll('.nav__item')
 
 const addNavItemsAnimation = () => {
 	let delayTime = 0
 
 	navItems.forEach(item => {
-		item.classList.add('nav-items-animation')
+		item.classList.toggle('nav-items-animation')
 		item.style.animationDelay = '.' + delayTime + 's'
 		delayTime++
 	})

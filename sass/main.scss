@@ -34,7 +34,7 @@ body {
 		display: block;
 		margin: 0.5em 0;
 		padding: 0.5em 2em;
-		font-size: 2.8rem;
+		font-size: 3.4rem;
 		color: $pure-white;
 		text-decoration: none;
 		&::before {
@@ -150,7 +150,54 @@ body {
 		}
 	}
 }
-//MEDIA-HEADER
+
+// MAIN
+
+// DREAMS SECTION
+
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	&__title {
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		font-size: 1.4rem;
+	}
+}
+
+// MEDIA
+@media (min-width: 576px) {
+	.dreams {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			&-text {
+				width: 55%;
+				&--right {
+					text-align: right;
+				}
+			}
+			&-img {
+				width: 40%;
+				&--right {
+					order: 1;
+				}
+			}
+		}
+		&__img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+}
 @media (min-width: 768px) {
 	.white-block {
 		height: 50px;
@@ -164,6 +211,14 @@ body {
 			font-size: 2.2rem;
 		}
 	}
+	.dreams {
+		&__text {
+			font-size: 1.6rem;
+		}
+		&__title {
+			font-size: 2.6rem;
+		}
+	}
 }
 @media (min-width: 992px) {
 	.burger-btn {
@@ -174,6 +229,28 @@ body {
 		background-image: $blue-gradient, url('../img/header-island-large.jpg');
 		&__heading {
 			font-size: 10rem;
+		}
+	}
+	.nav {
+		&__item {
+			font-size: 4.2rem;
+		}
+	}
+	.dreams {
+		&__box {
+			margin: 5em 0;
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
+		&__title {
+			font-size: 3.2rem;
+		}
+		&__text {
+			font-size: 1.8rem;
 		}
 	}
 }
