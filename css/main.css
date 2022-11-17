@@ -258,6 +258,30 @@ body {
   font-size: 1.4rem;
 }
 
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-image-island-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 0.5em;
+  font-size: 5rem;
+}
+.hero-img__text {
+  padding: 1em 0;
+  font-size: 1.5rem;
+}
+.hero-img hr {
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     flex-direction: row;
@@ -297,20 +321,33 @@ body {
   .dreams__title {
     font-size: 2.6rem;
   }
+  .hero-img {
+    padding: 15em 2em;
+  }
+  .hero-img__title {
+    font-size: 5.4rem;
+  }
+  .hero-img__text {
+    font-size: 2rem;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
     top: 50px;
     right: 50px;
   }
+  .nav__item {
+    font-size: 4.2rem;
+  }
   .header {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/header-island-large.jpg");
   }
   .header__heading {
     font-size: 10rem;
-  }
-  .nav__item {
-    font-size: 4.2rem;
   }
   .dreams__box {
     margin: 5em 0;
@@ -326,5 +363,19 @@ body {
   }
   .dreams__text {
     font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 20em 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-image-island-large.jpg");
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img__Text {
+    font-size: 2.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=main.css.map */
