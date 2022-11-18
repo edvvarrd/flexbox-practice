@@ -301,10 +301,62 @@ body {
 		}
 	}
 }
+// OFFERS
+.offers {
+	position: relative;
+	@include heroImage('../img/offers-hero-4-small.jpg');
+	overflow: hidden;
+	.section-heading {
+		color: $pure-white;
+	}
+	&__option {
+		margin: 1em 0;
+		box-shadow: 5px 5px 10px #2e2e2e2e;
+		background-color: $pure-white;
+		overflow: hidden;
+		&-img {
+			width: 100%;
+			object-position: bottom;
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		&-info {
+			padding: 2em;
+			background-color: $pure-white;
+			z-index: 10;
+		}
+		&-heading {
+			margin-bottom: 0.5em;
+			font-size: 2.4rem;
+			font-weight: 300;
+		}
+		&-text {
+			margin-bottom: 0.5em;
+			font-size: 1.3rem;
+			color: $dark;
+		}
+		&-btn {
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 100%;
+			color: $pure-white;
+			background-color: $main-color;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			&::before {
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
 // MEDIA
 
 @media (min-width: 576px) {
 	.dreams {
+		display: flex;
 		&__box {
 			flex-direction: row;
 			justify-content: space-between;
@@ -324,6 +376,34 @@ body {
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
+		}
+	}
+	.offers {
+		&__option {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+			&-img {
+				width: 50%;
+				height: auto;
+				object-fit: cover;
+				&--right {
+					order: 1;
+				}
+			}
+			&-info {
+				display: flex;
+				flex-direction: column;
+				width: 50%;
+				justify-content: space-between;
+			}
+			&-heading {
+				margin-bottom: 0.5em;
+				font-size: 3.6rem;
+			}
+			&-btn {
+				padding: 1em;
+			}
 		}
 	}
 }
@@ -418,6 +498,18 @@ body {
 		hr {
 			width: 60%;
 			max-width: 900px;
+		}
+	}
+	.offers {
+		background-image: $blue-gradient, url('../img/offers-hero-4-large.jpg');
+		&__option {
+			&-img {
+				object-fit: cover;
+				height: 300px;
+			}
+			&-text {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
