@@ -30,7 +30,9 @@ const handleNav = () => {
 }
 burgerBtn.addEventListener('click', handleNav)
 
-const collection = document.querySelector('hero-image')
+const heroImage = document.querySelector('hero-image')
+const offersHeroImage = document.querySelector('offers')
 if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1 && screen.width == '1280px') {
-	element.classList.add('safari-hero')
+	heroImage.classList.add('safari-hero')
+	offersHeroImage.classList.add('safari-hero')
 }
