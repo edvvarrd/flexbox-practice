@@ -224,7 +224,7 @@ body {
 			height: 100%;
 			border-radius: 8px;
 			background-size: cover;
-			transition: transform 1s, opacity 1s;
+			transition: transform 0.7s, opacity 0.7s;
 			&--first {
 				background-image: $light-blue-gradient, url('../img/islands-island-1.jpg');
 			}
@@ -261,14 +261,14 @@ body {
 			border-radius: 8px;
 			opacity: 0;
 			transform: rotateY(180deg);
-			transition: transform 1s, opacity 1s;
+			transition: transform 0.7s, opacity 0.7s;
 			&-title {
 				position: absolute;
 				left: 50%;
 				transform: translatex(-50%);
 				top: 1.2em;
 				font-family: 'Dancing Script', cursive;
-				font-size: 2.8rem;
+				font-size: 2.4rem;
 			}
 			&-list {
 				margin: 0 auto;

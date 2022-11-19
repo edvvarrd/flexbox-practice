@@ -307,7 +307,7 @@ body {
   height: 100%;
   border-radius: 8px;
   background-size: cover;
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.7s, opacity 0.7s;
 }
 .islands__card-img--first {
   background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/islands-island-1.jpg");
@@ -344,7 +344,7 @@ body {
   border-radius: 8px;
   opacity: 0;
   transform: rotateY(180deg);
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.7s, opacity 0.7s;
 }
 .islands__card-info-title {
   position: absolute;
@@ -352,7 +352,7 @@ body {
   transform: translatex(-50%);
   top: 1.2em;
   font-family: "Dancing Script", cursive;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 .islands__card-info-list {
   margin: 0 auto;
