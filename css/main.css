@@ -68,6 +68,10 @@
   padding: 6em 2em;
 }
 
+.safari-hero {
+  background-attachment: scroll;
+}
+
 @media (min-width: 768px) {
   .section-heading {
     font-size: 3.6rem;
@@ -584,13 +588,5 @@ body {
 @media (min-width: 1100px) {
   .islands__card {
     width: 30%;
-  }
-}
-@supports (-webkit-touch-callout: none) {
-  .hero-img {
-    background-attachment: scroll;
-  }
-  .offers {
-    background-attachment: scroll;
   }
 }/*# sourceMappingURL=main.css.map */
