@@ -318,9 +318,6 @@ body {
 			width: 100%;
 			object-position: bottom;
 			transition: transform 0.3s;
-			&:hover {
-				transform: scale(1.1);
-			}
 		}
 		&-info {
 			padding: 2em;
@@ -387,6 +384,9 @@ body {
 				width: 50%;
 				height: auto;
 				object-fit: cover;
+				&:hover {
+					transform: scale(1.1);
+				}
 				&--right {
 					order: 1;
 				}
@@ -518,5 +518,13 @@ body {
 		&__card {
 			width: 30%;
 		}
+	}
+}
+@supports (-webkit-touch-callout: none) {
+	.hero-img {
+		background-attachment: scroll;
+	}
+	.offers {
+		background-attachment: scroll;
 	}
 }
