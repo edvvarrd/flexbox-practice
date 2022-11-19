@@ -589,4 +589,12 @@ body {
   .islands__card {
     width: 30%;
   }
+}
+@supports (-webkit-touch-callout: none) {
+  .hero-img {
+    background-attachment: scroll;
+  }
+  .offers {
+    background-attachment: scroll;
+  }
 }/*# sourceMappingURL=main.css.map */
