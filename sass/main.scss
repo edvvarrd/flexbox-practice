@@ -520,11 +520,3 @@ body {
 		}
 	}
 }
-@supports (-webkit-touch-callout: none) {
-	.hero-img {
-		background-attachment: scroll;
-	}
-	.offers {
-		background-attachment: scroll;
-	}
-}
