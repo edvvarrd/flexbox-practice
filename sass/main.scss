@@ -521,8 +521,10 @@ body {
 	}
 }
 @supports (-webkit-touch-callout: none) {
-	.hero-img,
 	.offers {
+		background-attachment: scroll;
+	}
+	.hero-img {
 		background-attachment: scroll;
 	}
 }
