@@ -115,7 +115,11 @@ body {
 		}
 	}
 }
-
+.black-bars-color,
+.black-bars-color::before,
+.black-bars-color::after {
+	background-color: $dark;
+}
 // HEADER
 
 .header {
