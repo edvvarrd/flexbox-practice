@@ -3,7 +3,7 @@
 	background-image: $blue-gradient, url($bgImg);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 }
 @mixin contactForm {
 	margin-bottom: 2em;

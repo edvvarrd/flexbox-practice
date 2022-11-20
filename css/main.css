@@ -84,10 +84,6 @@
     padding: 10em 2em;
   }
 }
-.safari-hero {
-  background-attachment: scroll;
-}
-
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -219,7 +215,6 @@ body {
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/header-island-small.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-attachment: scroll;
 }
 .header__heading {
@@ -268,7 +263,6 @@ body {
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-image-island-small.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   text-align: center;
   color: #fff;
   overflow: hidden;
@@ -388,7 +382,6 @@ body {
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/offers-hero-4-small.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   overflow: hidden;
 }
 .offers .section-heading {
