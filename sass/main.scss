@@ -349,6 +349,130 @@ body {
 		}
 	}
 }
+
+// REVIEWS
+
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border-radius: 8px;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		transition: transform 0.3s;
+		&-img {
+			position: absolute;
+			top: 8%;
+			left: 75%;
+			transform: translate(-50%, -50%);
+			img {
+				width: 80px;
+				height: 80px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+		&-quote {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			color: $main-color;
+		}
+		&-text {
+			margin-bottom: 1em;
+			font-size: 1.4rem;
+			color: $dark;
+		}
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+}
+
+// CONTACT
+
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+	.white-block-left {
+		background-color: $dark;
+	}
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form {
+		&-label {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+		&-input {
+			@include contactForm;
+		}
+		&-textarea {
+			@include contactForm;
+			max-width: 100%;
+			min-width: 100%;
+			min-height: 150px;
+		}
+		&-btn {
+			align-self: flex-end;
+			padding: 1em;
+			width: 100%;
+			max-width: 300px;
+			color: $pure-white;
+			border: none;
+			border-radius: 8px;
+			background-color: $main-color;
+			cursor: pointer;
+			&::before {
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
+
+// FOOTER
+
+.footer {
+	color: $pure-white;
+	background-color: $dark;
+	.wrapper {
+		padding: 6em 2em 0;
+	}
+	&__box {
+		font-size: 1.4rem;
+		&-desktop {
+			display: none;
+		}
+		&-title {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+		&-social {
+			margin: 2em 0 1em;
+		}
+		&-link {
+			padding: 0 0.3em;
+			color: $pure-white;
+			font-size: 3.6rem;
+			text-decoration: none;
+			transition: color 0.3s;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:hover {
+				color: $light-white;
+			}
+		}
+	}
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+}
 // MEDIA
 
 @media (min-width: 576px) {
@@ -452,6 +576,35 @@ body {
 			width: 45%;
 		}
 	}
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+			&:first-child {
+				width: 50%;
+			}
+			&-desktop {
+				display: block;
+			}
+			&-title {
+				font-size: 2.4rem;
+			}
+			&-list {
+				list-style: none;
+				&-item {
+					margin-bottom: 1em;
+					a {
+						color: $light-white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
 @media (min-width: 992px) {
 	.burger-btn {
@@ -518,5 +671,10 @@ body {
 		&__card {
 			width: 30%;
 		}
+	}
+}
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
 	}
 }

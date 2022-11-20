@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="./css/main.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <script src="https://kit.fontawesome.com/ec2ee50863.js" crossorigin="anonymous"></script>
 </head>
 
@@ -173,8 +175,109 @@
             </div>
             <div class="white-block white-block-left"></div>
         </section>
+        <section id="reviews" class="reviews section-padding white-section">
+            <h2 class="section-heading">Reviews</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinions-girl.jpg" alt="Anna Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                provident mollitia harum neque suscipit alias quo repudiandae! Explicabo, blanditiis
+                                esse!</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinions-girl-2.jpg" alt="Maria Wiśniewska">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                provident mollitia harum neque suscipit alias quo repudiandae! Explicabo, blanditiis
+                                esse!</p>
+                            <strong>Maria Wiśniewska</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinions-man.jpg" alt="Jan Kowalski">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                                provident mollitia harum neque suscipit alias quo repudiandae! Explicabo, blanditiis
+                                esse!</p>
+                            <strong>Jan Kowalski</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section-padding section white-section">
+            <div class="white-block white-block-right"></div>
+            <h2 class="section-heading">Contact</h2>
+            <div class="wrapper">
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Name:</label>
+                        <input type="text" class="contact__form-input" id="name">
+                        <label for="email" class="contact__form-label">E-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+                    <label for="message" class="contact__form-label">Message:</label>
+                    <textarea class="contact__form-textarea" id="message"></textarea>
+                    <button type="submit" class="contact__form-btn btn-animation">Submit</button>
+                </form>
+            </div>
+            <div class="white-block white-block-left"></div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <h3 class="footer__box-title"><i class="fas fa-kiwi-bird"></i> TP Co.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam dolore reiciendis magni iste
+                        ipsam esse consequuntur enim repudiandae assumenda.</p>
+                    <div class="footer__box-social">
+                        <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+                <div class="footer__box footer__box-desktop">
+                    <h3 class="footer__box-title">Islands</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">Caribbean Island</a></li>
+                        <li class="footer__box-list-item"><a href="#">Hawaii Island</a></li>
+                        <li class="footer__box-list-item"><a href="#">Stegna Island</a></li>
+                        <li class="footer__box-list-item"><a href="#">Other islands</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box-desktop">
+                    <h3 class="footer__box-title">Company</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">About us</a></li>
+                        <li class="footer__box-list-item"><a href="#">Managment</a></li>
+                        <li class="footer__box-list-item"><a href="#">Career</a></li>
+                        <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Tropical Paradise</p>
+        </div>
+    </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
 
