@@ -704,6 +704,7 @@ body {
   .hero-img {
     padding: 20em 2em;
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-image-island-large.jpg");
+    background-attachment: fixed;
   }
   .hero-img__title {
     font-size: 7.2rem;
@@ -717,6 +718,7 @@ body {
   }
   .offers {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/offers-hero-4-large.jpg");
+    background-attachment: fixed;
   }
   .offers__option-img {
     -o-object-fit: cover;
