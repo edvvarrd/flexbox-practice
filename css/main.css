@@ -630,7 +630,6 @@ body {
   }
   .hero-img {
     padding: 15em 2em;
-    background-attachment: fixed;
   }
   .hero-img__title {
     font-size: 5.4rem;
@@ -650,9 +649,6 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
-  }
-  .offers {
-    background-attachment: fixed;
   }
   .footer__boxes {
     display: flex;
@@ -738,8 +734,14 @@ body {
   }
 }
 @media (min-width: 1100px) {
+  .hero-img {
+    background-attachment: fixed;
+  }
   .islands__card {
     width: 30%;
+  }
+  .offers {
+    background-attachment: fixed;
   }
 }
 @media (max-width: 767px) {
