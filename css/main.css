@@ -280,7 +280,7 @@ body {
 }
 .hero-img__text {
   padding: 1em 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .hero-img hr {
   color: #fff;
@@ -630,6 +630,7 @@ body {
   }
   .hero-img {
     padding: 15em 2em;
+    background-attachment: fixed;
   }
   .hero-img__title {
     font-size: 5.4rem;
@@ -649,6 +650,9 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
+  }
+  .offers {
+    background-attachment: fixed;
   }
   .footer__boxes {
     display: flex;
@@ -710,7 +714,6 @@ body {
   .hero-img {
     padding: 20em 2em;
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-image-island-large.jpg");
-    background-attachment: fixed;
   }
   .hero-img__title {
     font-size: 7.2rem;
@@ -724,7 +727,6 @@ body {
   }
   .offers {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/offers-hero-4-large.jpg");
-    background-attachment: fixed;
   }
   .offers__option-img {
     -o-object-fit: cover;

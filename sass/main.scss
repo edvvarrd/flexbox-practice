@@ -558,6 +558,7 @@ body {
 	}
 	.hero-img {
 		padding: 15em 2em;
+		background-attachment: fixed;
 		&__title {
 			font-size: 5.4rem;
 		}
@@ -579,6 +580,9 @@ body {
 			margin: 1em;
 			width: 45%;
 		}
+	}
+	.offers {
+		background-attachment: fixed;
 	}
 	.footer {
 		&__boxes {
@@ -646,7 +650,6 @@ body {
 	.hero-img {
 		padding: 20em 2em;
 		background-image: $blue-gradient, url('../img/hero-image-island-large.jpg');
-		background-attachment: fixed;
 		&__title {
 			font-size: 7.2rem;
 		}
@@ -660,7 +663,6 @@ body {
 	}
 	.offers {
 		background-image: $blue-gradient, url('../img/offers-hero-4-large.jpg');
-		background-attachment: fixed;
 		&__option {
 			&-img {
 				object-fit: cover;
