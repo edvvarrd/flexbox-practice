@@ -1,2 +1,2 @@
-# I'm going to fill it later, but yeah,
-It's gonna be a website based on flexbox.
+# Flexbox Practice with MMCSchool course
+## (Fill it later)
